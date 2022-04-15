@@ -1,0 +1,67 @@
+body { background:#d4c7b9; }
+h1,h2,footer { padding:0.2em; text-align:center; }
+.srodek { text-align:center;}
+nav{ float:left; width:100%; }
+nav, footer {background: #45525a; color:#ffe9ba; border-radius:10px;}
+nav a {
+ float:left;
+ display:block;
+ width:23%;
+ padding:1%;
+ font-size:110%;
+ color:#ffe9ba;
+ text-align:center;
+}
+section { clear:both;}
+img { max-width: 100%; height: auto; border-radius:10px; }
+.slajd {
+ /*float:left;
+ display:block;*/
+ display: inline-block;
+ width:13%;
+ text-align:center;
+ border-radius:10px;
+ background:#ffe9ba;
+ padding:1% 0.5%;
+ margin:1%;
+}
+.slajd:hover { background:#45525a; }
+footer { clear:both; }
+.galeria{ margin:auto; width:90%;}
+
+@media screen and (max-width: 720px) {
+ nav a { 
+ width: 48%;
+ padding: 10px 0;
+ font-size:140%;
+ }
+ .slajd {width: 45%; }
+}
+@media screen and (min-width: 550px) and (max-width: 720px) {
+ body { font-size: 13px; }
+ h1 { font-size: 23px; }
+ h2 { font-size: 18px; }
+}
+@media screen and (min-width: 482px) and (max-width: 550px) {
+ nav a {
+	border-bottom: 1px solid #fff;
+	float: none;
+	width: 100%;
+ }
+ nav a:last-child{
+	border-bottom: none;
+ }
+ .slajd{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+ }
+}
+
+@media only screen and (min-width : 768px)
+ and (max-width : 1024px)
+ and (orientation : landscape)
+ {
+	.slajd {width: 45%; }
+ }

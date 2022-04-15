@@ -1,0 +1,17 @@
+#tresc{
+	text-align: center;
+	width: 70%;
+	background: none;
+}
+
+ul#galeria{
+	background-color: #98bed8;
+	list-style-type: none;
+	padding-top: 30px;
+	margin: 10px auto;
+}
+
+ul#galeria li{
+	display: inline-block;
+	margin: 5px 15px;
+}
