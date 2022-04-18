@@ -4,126 +4,87 @@ padding:0;
 }
 /*formatowanie znacznika body:*/
 body {
-background:#ff;
-color:#000040;
+background:#d4c7b9;
+font-family: arial;
 }
 /*formatowanie znaczników h1, h2 i elementu o identyfikatorze stopka:*/
-h1, #stopka {
-background: #000040;
-color: #8080ff;
+h1, footer {
 text-align:center;
+background: #45525a; color:#ffe9ba; border-radius:10px;
 }
-/*formatowanie elementu o id="tresc": */
-#tresc {
-background:#80ffff;
+main {
+	
 }
-/*formatowanie elementu o id="menu": */
-#menu {
-background:#ffffff;
-}
-/* tło kontenera */
-#kontener {
-background:#ffffff;
-}
-/*pozycjonowanie elementów: */
-/*Nawigacja: */
-/*#menu {
-float:left;
-width:100%;
-margin:0;
-padding:0;
-background:#ffffff;
-border-bottom:2px solid #0000a0;
-}*/
-/*#menu li {
-float:left;
-margin:0;
-padding:0;
-list-style:none;
-padding-right:3px;
-font-family:"Lucida
-Grande", sans-serif;
-font-size:85%;
-}
-#menu a {
-float:left;
-display:block;
-margin:0;
-padding:4px 8px;
-color:#ffffd7;
-text-decoration:none;
-border: 1px solid
-#0000c6;
-border-bottom:none;
-background:#0000a0;
-}
-#menu a:hover {
-background:#0000d5;
-color:#ffffff;
-text-decoration:none;
-}*/
 /*Pozycjonowanie elementów na stronie */
-#tresc {
+article{
 float:left;
 width:75%;
 padding:1%;
+background:#f0f0f0;
+border-radius: 1%;
+margin: 10px auto;
+-webkit-box-shadow: 24px 24px 68px -17px rgba(66, 68, 90, 1);
+-moz-box-shadow: 24px 24px 68px -17px rgba(66, 68, 90, 1);
+box-shadow: 24px 24px 68px -17px rgba(66, 68, 90, 1);
 }
-#pasek {
+aside {
 float:right;
 width:20%;
 padding:1%;
 }
-#stopka{
+footer{
 clear:both;
 width:100%;
 padding:5px 0 5px 0;
 text-align:center;
 }
 
-*.box { background:#0000a0;
-color:#dbffff;
+aside section{ 
+background: #45525a; color:#ffe9ba; border-radius:10px;
 padding:5px;
 margin:5px;
 font-size:90%;}
 /* hiperłącza w elementach klasy box*/
-*.box a{color:#ffffb0}
+aside section a{color:#ffffb0}
 
 /*Nowa nawigacja*/
-#nav {
+nav {
  text-align: left;
  overflow: hidden;
  font-family: calibri, tahoma;
+ margin-bottom: 10px;
 }
-ul#nav li {
+ul#menu li {
  border: 1px solid #d5d5d5;
  list-style-type: none;
  float: left;
- background: #98bed8;
+ background: #45525a;
  margin-left: 3px;
+ border-radius: 5px;
 }
-ul#nav li:hover {
+ul#menu li:hover {
  border: 1px solid #d5d5d5;
  list-style-type: none;
- background: #f0f0f0;
+ background: #58656d;
  margin-left: 3px;
 }
-ul#nav li a {
+ul#menu li a {
  display : block;
  padding : 4pt;
  text-decoration : none;
- color: #324cc2;
+ color: #ffe9ba;
 }
-ul#nav li ul li a {
+ul#menu li ul li a {
  width: 160px;
 }
-ul#nav li ul li:hover {
+ul#menu li ul li:hover {
  background: white;
 }
-ul#nav li ul {
+ul#menu li ul {
  overflow: hidden;
  display: none;
 }
-ul#nav li:hover ul {
+ul#menu li:hover ul {
  position: absolute;
  background: #aaa;
  padding: 0;
