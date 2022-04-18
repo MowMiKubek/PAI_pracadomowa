@@ -10,85 +10,86 @@
     <title>Szybki kurs HTML</title>
 </head>
 <body>
-    <div id="baner"> <h1>Szybki kurs HTML</h1></div>
-    <div id="menu">
- <ul id="nav">
- <li><a href="index.html">Podstawy</a></li>
- <li><a href="tabele.html">Tabele</a></li>
- <li><a href="">Formularze</a>
- <ul>
- <li><a href="formularze.html" >Pola formularza</a></li>
- <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
- </ul>
- </li>
- <li><a href="" title="">Galeria</a></li>
- </ul>
-</div>
+	<main>
+    <header> <h1>Szybki kurs HTML</h1></header>
+    <nav>
+	 <ul id="menu">
+	 <li><a href="index.html">Podstawy</a></li>
+	 <li><a href="tabele.html">Tabele</a></li>
+	 <li><a href="">Formularze</a>
+	 <ul>
+	 <li><a href="formularze.html" >Pola formularza</a></li>
+	 <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+	 </ul>
+	 </li>
+	 <li><a href="" title="">Galeria</a></li>
+	 </ul>
+	</nav>
 
-    <form method="POST">
-    <div id="tresc">
-    <div >
-        <h3>Podstawowe znaczniki formularza to:</h3>
-        <ul>
-            <li> &lt; form &gt; - znacznik podstawowy zawierający pola formularza</li>
-            <li>&lt; input &gt; - znacznik umożliwia wstawienie różnych pól(pole tekstowe,przycisk tpu radio, przycisk typu checkbox)
-                w zależności od wartości jego atrybutu type
-            </li>
-            <li>&lt;select &gt; - pole formularza typu lista rozwijana</li>
-            <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
-            <li>&lt;button&gt; - pole formularza typu przycisk</li>
-        </ul>
-    </div>
-    <h3>Przykładowy formularz HTML</h3>
-    <div >
-        <table>
-            <tr>
-                <td> <label for="naz">Nazwisko: </label></td>
-                <td><input  id="naz" type="text" ></td>
-            </tr>
-            <tr>
-                <td> <label for="wiek">Wiek: </label></td>
-                <td><input  id="wiek" type="text" ></td>
-            </tr>
-            <tr> 
-                <td>Państwo:</td>
-                <td><select name="panstwo" class="przycisk"> 
-                    <option value="p" >Polska</option>
-                    <option value="u">USA</option>
-                    <option value="f">Francja</option>
-                    <option value="r">Rosja</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td><label for="mail">Adres e-mail: </label></td>
-                <td><input  id="mail" type="email" name="email" maxlength="30" size="30"></td>
-            </tr>
-        </table>  
-        <h4>Zamawiam tutorial z języka:</h4>
-        <input class="przycisk"  type="checkbox" name="PHP" >PHP
-        <input class="przycisk"  type="checkbox" name="C"  >C/C++
-        <input class="przycisk"  type="checkbox" name="Java">Java
-        <h4>Sposób zapłaty</h4>
-        <input class="przycisk"  type="radio" name="radio" >eurocard
-        <input class="przycisk"  type="radio" name="radio" >visa
-        <input class="przycisk"  type="radio" name="radio" >przelew bankowy
-        <br>
-        <input class="buton" type="submit" value="Wyślij">
-        <input class="buton" type="reset" value="Anuluj">
-    </div>
-    </div>  
-    </form>
-	<div id="pasek">
+	<article>
+		<form method="POST">
+		<div >
+			<h3>Podstawowe znaczniki formularza to:</h3>
+			<ul>
+				<li> &lt; form &gt; - znacznik podstawowy zawierający pola formularza</li>
+				<li>&lt; input &gt; - znacznik umożliwia wstawienie różnych pól(pole tekstowe,przycisk tpu radio, przycisk typu checkbox)
+					w zależności od wartości jego atrybutu type
+				</li>
+				<li>&lt;select &gt; - pole formularza typu lista rozwijana</li>
+				<li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+				<li>&lt;button&gt; - pole formularza typu przycisk</li>
+			</ul>
+		</div>
+		<h3>Przykładowy formularz HTML</h3>
+		<div >
+			<table>
+				<tr>
+					<td> <label for="naz">Nazwisko: </label></td>
+					<td><input  id="naz" type="text" ></td>
+				</tr>
+				<tr>
+					<td> <label for="wiek">Wiek: </label></td>
+					<td><input  id="wiek" type="text" ></td>
+				</tr>
+				<tr> 
+					<td>Państwo:</td>
+					<td><select name="panstwo" class="przycisk"> 
+						<option value="p" >Polska</option>
+						<option value="u">USA</option>
+						<option value="f">Francja</option>
+						<option value="r">Rosja</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label for="mail">Adres e-mail: </label></td>
+					<td><input  id="mail" type="email" name="email" maxlength="30" size="30"></td>
+				</tr>
+			</table>  
+			<h4>Zamawiam tutorial z języka:</h4>
+			<input class="przycisk"  type="checkbox" name="PHP" >PHP
+			<input class="przycisk"  type="checkbox" name="C"  >C/C++
+			<input class="przycisk"  type="checkbox" name="Java">Java
+			<h4>Sposób zapłaty</h4>
+			<input class="przycisk"  type="radio" name="radio" >eurocard
+			<input class="przycisk"  type="radio" name="radio" >visa
+			<input class="przycisk"  type="radio" name="radio" >przelew bankowy
+			<br>
+			<input class="buton" type="submit" value="Wyślij">
+			<input class="buton" type="reset" value="Anuluj">
+		</div>
+		</form>
+    </article>  
+	<aside>
 <!-- W pasku zawarty jest kolejny blok klasy box:-->
-	<div class="box">
+	<section>
 		<h3>Walidatory:</h3>
 		<ul>
 			 <li> <a href="http://validator.w3.org/">HTML </a></li>
 			 <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
 		</ul>
-		</div>
+	</section>
 		<!-- Kolejny blok klasy box:-->
-		<div class="box">
+	<section>
 		<h3>Kursy:</h3>
 		<ul>
 			<li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
@@ -96,8 +97,9 @@
 			<li> <a href="https://www.w3schools.com/js/"> JS </a></li>
 			<li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
 		</ul>
-		</div>
-	</div>
-    <div id="stopka"> &copy;BP </div>
+	</section>
+	</aside>
+    <footer> &copy;BP </footer>
+	</main>
 </body>
 </html>
