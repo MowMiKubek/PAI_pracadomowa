@@ -1,17 +1,37 @@
 article{
 	text-align: center;
 	width: 70%;
-	background: none;
+	background: #f3e3d1;
 }
 
+
+
 ul#galeria{
-	background-color: #98bed8;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	list-style-type: none;
-	padding-top: 30px;
+	padding: 30px;
 	margin: 10px auto;
 }
 
 ul#galeria li{
-	display: inline-block;
 	margin: 5px 15px;
+	position: relative;
+}
+
+ul#galeria li:before{
+	content: '';
+	position: absolute;
+	background: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.25s;
+}
+
+ul#galeria li:hover:before{
+	opacity: 20%;
 }

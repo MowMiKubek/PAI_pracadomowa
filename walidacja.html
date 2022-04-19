@@ -16,10 +16,18 @@
 		 <li><a href="formularz.html">Formularze</a>
 			 <ul>
 				 <li><a href="formularze.html" >Pola formularza</a></li>
-				 <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+				 <li><a href="Walidacja.html" >Walidacja formularza</a></li>
+				 <li><a href="rwd.html" >RWD</a></li>
 			 </ul>
 		 </li>
-		 <li><a href="" title="">Galeria</a></li>
+		 <li><a href="">Pozostałe</a>
+		 <ul>
+			<li><a href="galeria.html">Galeria</a></li>
+			<li><a href="zamowienie.html">Zamówienie pizzy</a></li>
+			<li><a href="tabele.html">Tabele (moje)</a></li>
+			<li><a href="walidacja.html">Walidacja</a></li>
+		 </ul>
+		 </li>
 	 </ul>
 	</nav>
 
@@ -27,15 +35,15 @@
 		<form action="#" method="get">
 		 <p>
 			 Imię*:<br />
-			 <input type="text" name="imie" required><br />
+			 <input type="text" name="imie" required pattern="^([A-Z][a-z]*)([ ][A-Z][a-z]*)?"><br />
 			 Nazwisko*:<br />
-			 <input type="text" name="nazwisko" required><br />
+			 <input type="text" name="nazwisko" required pattern="^([A-Z][a-z]*)([\-][A-Z][a-z]*)?"><br />
 			 Email*:<br />
 			 <input type="email" name="email" required placeholder="nazwa@domena.ex"><br />
 			 Nr telefonu*:<br />
-			 <input type="tel" name="email" required placeholder="XXX XXX XXX"><br />
+			 <input type="tel" name="email" required placeholder="XXX XXX XXX" pattern="^([\+][0-9]{2}[ ])?[0-9]{3}[ \-]?[0-9]{3}[ \-]?[0-9]{3}"><br />
 			 Data urodzenia:<br />
-			 <input type="date" name="data" ><br />
+			 <input type="date" name="data"><br />
 			 Hasło*:<br />
 			 <input type="password" name="haslo" required><br />
 			 </p>

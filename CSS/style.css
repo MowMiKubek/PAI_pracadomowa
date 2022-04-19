@@ -49,45 +49,100 @@ aside section a{color:#ffffb0}
 
 /*Nowa nawigacja*/
 nav {
- text-align: left;
- overflow: hidden;
- font-family: calibri, tahoma;
- margin-bottom: 10px;
+	text-align: left;
+	font-family: calibri, tahoma;
+	margin-bottom: 10px;
+	width: 75%;
 }
-ul#menu li {
- border: 1px solid #d5d5d5;
- list-style-type: none;
- float: left;
- background: #45525a;
- margin-left: 3px;
- border-radius: 5px;
+
+ul#menu{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 0;
 }
-ul#menu li:hover {
- border: 1px solid #d5d5d5;
- list-style-type: none;
- background: #58656d;
- margin-left: 3px;
+
+ul#menu li ul{
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	border-radius: 10px;
+	padding: 0;
+	overflow: hidden;
+	width: auto;
 }
-ul#menu li a {
- display : block;
- padding : 4pt;
- text-decoration : none;
+
+ul#menu li{
+	width: 25%;
+	border-right: 1px dashed #aaa;
+	box-sizing: border-box;
+}
+
+ul#menu li:last-child{
+	border-right: none;
+}
+
+ul#menu li a
+{
+	display: block;
+	background: #45525a;
+	text-decoration: none;
+	color: #ffe9ba;
+	padding: 5%;
+	text-align: center;
+}
+
+ul#menu li ul li{
+	width: 95%;
+	border-bottom: 1px solid #aaa;/*#959191;*/
+}
+
+
+ul#menu li ul li:last-child{
+	border: none;
+}
+
+ul#menu li:hover ul{
+	background: #aaa;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+ul#menu li:hover ul li{
+	margin-left: 5%;
+}
+
+@media screen and (max-width: 650px) {
+	ul#menu li{
+		width: 50%; 
+		box-sizing: border-box;
+	}
+	ul#menu li:nth-child(-n + 2){
+		border-bottom: 1px solid #aaa;
+	}
+	ul#menu li:nth-child(even){
+	border-right: none;
+	}
+	nav, article, aside{
+		margin-left: auto; 
+		margin-right: auto; 
+		float: none;
+	}
+	aside 
+	{
+		display: flex;
+		width: 75%;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+}
+
+
+/*
+#45525a;
  color: #ffe9ba;
-}
-ul#menu li ul li a {
- width: 160px;
-}
-ul#menu li ul li:hover {
- background: white;
-}
-ul#menu li ul {
- overflow: hidden;
- display: none;
-}
-ul#menu li:hover ul {
- position: absolute;
- background: #aaa;
- padding: 0;
- display: block;
- width: 177px;
-}
+*/
