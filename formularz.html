@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/formularze.css" type="text/css">
+    <link rel="stylesheet" href="CSS/tabele.css" type="text/css">
+
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+	<main>
+    <header> <h1>Szybki kurs HTML</h1></header>
+    <nav>
+	 <ul id="menu">
+		 <li><a href="index.html">Podstawy</a></li>
+		 <li><a href="tabele.html">Tabele</a></li>
+		 <li><a href="formularz.html">Formularze</a>
+			 <ul>
+				 <li><a href="formularze.html" >Pola formularza</a></li>
+				 <li><a href="walidacja.html" >Walidacja formularza</a></li>
+				 <li><a href="dotacje.html" >Dotacje</a></li>
+				 <li><a href="rwd.html" >RWD</a></li>
+			 </ul>
+		 </li>
+		 <li><a href="">Pozostałe</a>
+		 <ul>
+			<li><a href="galeria.html">Galeria</a></li>
+			<li><a href="zamowienie.html">Zamówienie pizzy</a></li>
+			<li><a href="tabele.html">Tabele (moje)</a></li>
+			<li><a href="walidacja.html">Walidacja</a></li>
+		 </ul>
+		 </li>
+	 </ul>
+	</nav>
+
+	<article>
+		<form method="POST">
+			Podaj login: <input name="login" type="text"/><br/>
+			Podaj hasło: <input name="password" type="password"/><br/><br/>
+			Wybierz ulubione języki programowania: <br/>
+			<input type="checkbox" name="PHP" >PHP
+			<input type="checkbox" name="C"  >C/C++
+			<input type="checkbox" name="Java">Java
+			<br/>
+			Wybierz przeglądarkę, z której najczęściej korzystasz:<br/>
+			<input value="firefox" name="radio" type="radio"/> Firefox
+			<input value="chrome" name="radio" type="radio"/> Chrome
+			<input value="explorer" name="radio" type="radio"/> Internet Explorer<br/>
+			<input type="submit" value="Wyślij"/>
+			<input type="Reset" value="Reset"/>
+			<br/>
+			Wskaż hobby i uzasadnij dlaczego je lubisz:<br/>
+			<select name="panstwo" class="przycisk"> 
+				<option value="film" >Film</option>
+				<option value="sport">Sport</option>
+				<option value="ksiazka">Ksiazka</option>
+				<option value="inne">Inne</option>
+			</select>
+			<br/>
+			<br/>
+			<textarea rows="5" columns="5"></textarea><br/>
+			<input type="button" value="Kliknij tutaj"/>
+		</form>
+    </article>  
+	<aside>
+<!-- W pasku zawarty jest kolejny blok klasy box:-->
+	<section>
+		<h3>Walidatory:</h3>
+		<ul>
+			 <li> <a href="http://validator.w3.org/">HTML </a></li>
+			 <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+		</ul>
+	</section>
+		<!-- Kolejny blok klasy box:-->
+	<section>
+		<h3>Kursy:</h3>
+		<ul>
+			<li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+			<li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+			<li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+			<li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+		</ul>
+	</section>
+	</aside>
+    <footer> &copy;BP </footer>
+	</main>
+</body>
+</html>
