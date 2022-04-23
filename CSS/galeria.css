@@ -4,8 +4,6 @@ article{
 	background: #f3e3d1;
 }
 
-
-
 ul#galeria{
 	display: flex;
 	flex-wrap: wrap;
@@ -20,7 +18,7 @@ ul#galeria li{
 	position: relative;
 }
 
-ul#galeria li:before{
+ul#galeria li a:before{
 	content: '';
 	position: absolute;
 	background: #fff;
@@ -32,6 +30,6 @@ ul#galeria li:before{
 	transition: 0.25s;
 }
 
-ul#galeria li:hover:before{
+ul#galeria li a:hover:before{
 	opacity: 20%;
 }

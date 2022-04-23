@@ -76,12 +76,7 @@ ul#menu li ul{
 
 ul#menu li{
 	width: 25%;
-	border-right: 1px dashed #aaa;
 	box-sizing: border-box;
-}
-
-ul#menu li:last-child{
-	border-right: none;
 }
 
 ul#menu li a
@@ -92,6 +87,7 @@ ul#menu li a
 	color: #ffe9ba;
 	padding: 5%;
 	text-align: center;
+	transition: 0.2s;	
 }
 
 ul#menu li ul li{
@@ -102,6 +98,10 @@ ul#menu li ul li{
 
 ul#menu li ul li:last-child{
 	border: none;
+}
+
+ul#menu li a:hover, #ulmenu li ul li a{
+	background: #56656e;
 }
 
 ul#menu li:hover ul{
